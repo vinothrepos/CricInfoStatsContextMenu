@@ -1,0 +1,39 @@
+{
+  "name": "Cric Info Player Stats",
+  "manifest_version": 3,
+  "version": "1.0.0",
+  "description": "Context Menu Link",
+  "icons": {
+    "512": "./icons/cricket.png"
+    //"512": "./icons/test.png"
+     //"64": "./icons/odi.png"
+ },
+  "action": {
+    "default_icon": "./icons/cricket.png",
+    "default_popup": "background_page.html"
+  },
+  "background": {
+    //"page": "background_page.html",
+    "service_worker": "background.js"
+    //"persistent": false
+  },
+
+  //"content_scripts": [
+  //  {
+  //    "matches": [ "http://*/*", "https://*/*" ],
+  //    "js": [ "content.js" ]
+  //  }
+  //],
+
+  "permissions": [
+    //"storage",
+    //"notifications",
+    //"clipboardWrite",
+    "tabs",
+    //"scripting",
+    "contextMenus"
+  ]
+}
+
+
+
