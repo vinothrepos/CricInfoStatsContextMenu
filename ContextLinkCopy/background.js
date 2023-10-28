@@ -47,19 +47,16 @@ chrome.contextMenus.onClicked.addListener(function (info) {
         case "Test":
             player = info.linkUrl.split('-').slice(-1);
             target = `https://stats.espncricinfo.com/ci/engine/player/${player}.html?class=1;orderby=start;orderbyad=reverse;template=results;type=allround;view=match`;
-            //chrome.tabs.create({ url: target, active: false });
             break;
 
         case "ODI":
             player = info.linkUrl.split('-').slice(-1);
             target = `https://stats.espncricinfo.com/ci/engine/player/${player}.html?class=2;orderby=start;orderbyad=reverse;template=results;type=allround;view=match`;
-           // chrome.tabs.create({ url: target, active: false });
             break;
 
         case "T20":
             player = info.linkUrl.split('-').slice(-1);
             target = `https://stats.espncricinfo.com/ci/engine/player/${player}.html?class=3;orderby=start;orderbyad=reverse;template=results;type=allround;view=match`;
-           // chrome.tabs.create({ url: target, active: false });
             break;
     }
 
